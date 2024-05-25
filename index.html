@@ -1,7 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacob Leonardo - Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .landing {
+            background-color: #434343;
+            color: white;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .projects-section {
+            background-color: #666666;
+            color: white;
+            padding: 20px;
+        }
+
+        .project-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .project-image {
+            width: 50%;
+            max-height: 200px;
+            object-fit: cover;
+        }
+
+        .project-text {
+            width: 45%;
+            padding-left: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .project-item {
+                flex-direction: column-reverse;
+            }
+
+            .project-image, .project-text {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
 <body>
-    <h1>Hello World</h1>
-    <p>I'm hosted with GitHub Pages.</p>
+
+    <div class="landing">
+        <h1><span style="font-size: 24px;">My name is</span> Jacob Leonardo</h1>
+        <p>Software and Game Developer</p>
+    </div>
+
+    <div class="projects-section">
+        <h2>My Projects</h2>
+        <div class="project-item">
+            <img src="path/to/project1.jpg" alt="Project 1" class="project-image">
+            <div class="project-text">Project 1 Description</div>
+        </div>
+        <div class="project-item">
+            <img src="path/to/project2.jpg" alt="Project 2" class="project-image">
+            <div class="project-text">Project 2 Description</div>
+        </div>
+        <!-- Add more project items as needed -->
+    </div>
+
+    <!-- You can add more sections with alternating backgrounds and content as needed -->
+
 </body>
 </html>
