@@ -26,19 +26,22 @@
             background-color: #666666;
             color: white;
             padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .project-item {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
             margin-bottom: 20px;
+            width: 80%; /* Ensures the project item doesn't stretch too wide */
         }
 
         .project-image {
-            width: 50%;
-            max-height: 200px;
-            object-fit: cover;
+            max-width: 50%;
+            height: auto;
         }
 
         .project-text {
@@ -48,11 +51,11 @@
 
         @media (max-width: 768px) {
             .project-item {
-                flex-direction: column-reverse;
+                flex-direction: column-reverse; /* Reverses the order of children */
             }
 
             .project-image, .project-text {
-                width: 100%;
+                width: 100%; /* Makes the image and text take full width on small screens */
             }
         }
     </style>
@@ -67,12 +70,12 @@
     <div class="projects-section">
         <h2>My Projects</h2>
         <div class="project-item">
-            <img src="path/to/project1.jpg" alt="Project 1" class="project-image">
+            <img src="https://img.itch.zone/aW1nLzEwOTEwNTA4LnBuZw==/315x250%23c/NMqk%2FW.png" alt="Project 1" class="project-image">
             <div class="project-text">Project 1 Description</div>
         </div>
         <div class="project-item">
-            <img src="path/to/project2.jpg" alt="Project 2" class="project-image">
             <div class="project-text">Project 2 Description</div>
+            <img src="https://img.itch.zone/aW1nLzExNDg0OTEyLnBuZw==/315x250%23c/SF4pTT.png" alt="Project 2" class="project-image">
         </div>
         <!-- Add more project items as needed -->
     </div>
